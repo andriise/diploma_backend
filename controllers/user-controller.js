@@ -179,6 +179,7 @@ const current = async (req, res) => {
     birthday,
     phone,
     skype,
+    workingHours,
     createdAt,
     updatedAt,
   } = req.user;
@@ -190,6 +191,7 @@ const current = async (req, res) => {
     birthday,
     phone,
     skype,
+    workingHours,
     createdAt,
     updatedAt,
   });

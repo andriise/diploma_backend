@@ -38,12 +38,18 @@ const userSchema = new Schema(
       type: String,
       default: null,
     },
+    workingHours: {
+      type: Number,
+      default: "",
+      required: [true, "Working hours is required"],
+    },
     accessToken: { type: String, default: "" },
     refreshToken: { type: String, default: "" },
     avatarURL: {
       type: String,
       default: "",
     },
+
     avatarID: {
       type: String,
       default: "",

@@ -15,6 +15,7 @@ const updateUserSchema = Joi.object({
   birthday: Joi.date().format('YYYY-MM-DD').allow('').optional(),
   phone: Joi.string().max(20).pattern(PHONE_REGEXP).allow('').optional(),
   skype: Joi.string().max(16).allow(''),
+  workingHours: Joi.number().max(40)
 });
 
 const loginSchema = Joi.object({
